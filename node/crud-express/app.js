@@ -22,15 +22,15 @@ app.engine('html', require('express-art-template'))
 
 // 配置模板引擎和 body-parser 一定要在 app.use(router) 挂载路由之前
 // parse application/x-www-form-urlencoded
-//app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
-//app.use(bodyParser.json())
+app.use(bodyParser.json())
 
 // 把路由容器挂载到 app 服务中
 app.use(router)
 
-app.listen(3001, function () {
-  console.log('running 3000...')
+app.listen(3002, function () {
+  console.log('running 3002...')
 })
 
 module.exports = app
