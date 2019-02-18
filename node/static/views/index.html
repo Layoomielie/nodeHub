@@ -1,0 +1,19 @@
+{{extend './layout.html'}}
+{{block 'head'}}
+<style>
+        body{
+            background-color: antiquewhite
+        }
+</style>
+{{/block}}
+{{block 'content'}}
+<div>
+    <p>真正的index内容 {{name}}</p>
+</div>
+{{/block }}
+
+{{block 'alert'}}
+    <script>
+            window.alert('click')
+    </script>
+{{/block}}
