@@ -33,7 +33,16 @@ class App extends React.Component{
     // 卸载阶段
     // componentWillUnmount 组件卸载  执行清理  清除定时器 清除DOM对象
 
+    //props 参数校验
+    // 引入模块
+    //import PropTypes from 'prop-types'
 
+    //  ...以下代码是类的静态属性：
+    // // propTypes 静态属性的名称是固定的！！！
+    // static propTypes = {
+    //   initCount: PropTypes.number, // 规定属性的类型
+    //   initAge: PropTypes.number.isRequired // 规定属性的类型，且规定为必传字段
+    //}
     render(){
         let text=this.state.text;
         return (
